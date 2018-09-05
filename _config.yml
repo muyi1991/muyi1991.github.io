@@ -1,0 +1,73 @@
+#
+###################################
+# Site wide configuration
+####################################
+#
+title:       "木易的博客"
+description: ''
+url:         # the base hostname & protocol for your site
+
+#
+###################################
+# Jekyll configuration
+####################################
+#
+timezone:          Asia/Beijing
+markdown:          kramdown
+highlighter:       rouge
+excerpt_separator: <!--more-->
+permalink:         /:year/:month/:title/
+timezone:          Asia/Beijing
+
+kramdown:
+  auto_ids:       true
+  footnote_nr:    1
+  entity_output:  as_char
+  toc_levels:     1..6
+  enable_coderay: false
+
+# Pagination
+gems: [jekyll-paginate]
+paginate: 10
+paginate_path: "page/:num/"
+
+#
+###################################
+# Site Owner configuration
+####################################
+#
+owner:
+  name: 木易
+  avatar: avatar.jpg
+  job: "岁月静好"
+  bio: ""
+
+  github: muyi1991 #username
+  weibo:  #username
+  facebook:  #username
+  email: yiluoge@126.com
+  duoshuo:  #多说域名
+
+  google:
+    plus: #username
+    analytics: UA-62251910-1
+    verify:
+    ad-client:
+    ad-slot:
+  bing-verify:
+  disqus-shortname: #username
+  twitter:  #username
+  stackoverflow: #123456/username   from a "http://stackoverflow.com/users/123456/username" link
+  linkedin: #username
+  xing: #username
+  instagram: #username
+  lastfm: #username
+  tumblr: #username
+  pinterest: #username
+  foursquare: #username
+  steam: #username
+  dribbble: #username
+  youtube: #username
+  soundcloud: #username
+  flickr: #username
+  codepen: #username
