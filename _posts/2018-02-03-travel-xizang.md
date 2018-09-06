@@ -2,7 +2,7 @@
 layout: post
 title: 西藏之旅-离天空最近的地方
 categories: [旅行]
-tags: [旅行，西藏]
+tags: [西藏]
 date: 2018-02-04 20:39:08
 comments: true
 ---
@@ -105,6 +105,29 @@ comments: true
 
 2018年1月20日。
 
+这个是近处看的南迦巴瓦峰
+
+![](http://pems1vpvs.bkt.clouddn.com/WechatIMG26.jpeg)
+
+这个是南迦巴瓦峰的对面视角。
+
+![](http://pems1vpvs.bkt.clouddn.com/WechatIMG27.jpeg)
+
+导游说这个山峰山有很多野兽，雪豹，
+
+![](http://pems1vpvs.bkt.clouddn.com/WechatIMG28.jpeg)
+
+这个就是雅鲁藏布江啦。和想象的区别还是挺大的。
+
+#### 沙漠
+
+在山谷地方，我看到一处沙漠，由特定位置风吹堆积而成。
+
+![](http://pems1vpvs.bkt.clouddn.com/WechatIMG30.jpeg)
+
+最后再附上一张我的背影照。人家有的是背景，我有的是背影。哈哈
+
+![](http://pems1vpvs.bkt.clouddn.com/WechatIMG33.jpeg)
 
 
 
