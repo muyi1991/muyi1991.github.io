@@ -2,7 +2,7 @@
 layout: post
 title: 区块链并非下一代互联网
 categories: [随笔]
-tags: [区块链，比特币]
+tags: [区块链,比特币]
 date: 2018-04-06 20:39:08
 comments: true
 ---
