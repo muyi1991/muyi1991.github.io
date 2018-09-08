@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 西藏之旅-离天空最近的地方
+title: 西藏-离天空最近的地方
 categories: [旅行]
 tags: [西藏]
 date: 2018-02-04 20:39:08
