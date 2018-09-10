@@ -1,7 +1,7 @@
 ---
 layout: post
-title: 书籍推荐
-categories: [书籍]
+title: 图书推荐
+categories: [随笔]
 tags: [书籍]
 date: 2016-06-06 14:43:08
 comments: true
