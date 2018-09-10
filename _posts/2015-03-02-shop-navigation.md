@@ -1,8 +1,8 @@
 ---
 layout: post
 title: 持久导航-从商场购物谈网站的导航设计
-categories: [产品]
-tags: [用户体验,产品设计]
+categories: [易用性]
+tags: [易用性,产品设计]
 date: 2015-03-02 10:42:30
 comments: true
 ---
