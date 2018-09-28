@@ -1,10 +1,10 @@
 ---
-layout: post
+layout: 
 title: 区块链并非下一代互联网
 categories: [随笔]
 tags: [区块链]
 date: 2018-04-06 20:39:08
-comments: 
+comments: true
 ---
 
 #### 区块链
