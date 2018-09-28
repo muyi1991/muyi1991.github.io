@@ -1,5 +1,5 @@
 ---
-layout: 
+layout: a
 title: 区块链并非下一代互联网
 categories: [随笔]
 tags: [区块链]
