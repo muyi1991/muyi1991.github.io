@@ -1,0 +1,80 @@
+---
+layout: post
+title: 如何用github搭建个人博客
+categories: [随笔]
+tags: []
+date: 2018-11-03 17:42:08
+comments: true
+---
+
+#### 个人博客
+
+个人博客就相当于一个个人网站，大致由三部分构成。
+
+* 一个网址，相当于你的博客的路径，可以通过这个网址找到你的博客。
+* 一个储存空间，存储空间用来存放你的博客内容。
+* 剩下的最重要的就是网站内容，也就是你个人博客的内容，博文。
+
+这篇文章介绍如何用github当作免费的存储空间，让后注册一个域名，构建一个个人博客。
+
+首先我们先来介绍空间，也就是创建自己的github空间。
+
+#### github空间
+
+第一步：创建一个Github账号。
+![](http://phm47bgvh.bkt.clouddn.com/1.png)
+
+第二步：创建一个库存放我们的博客文件。
+    注意：库的名称为：用户名.github.io
+![](http://phm47bgvh.bkt.clouddn.com/2.png)
+    
+第三步：设置博客主题。
+![](http://phm47bgvh.bkt.clouddn.com/3.png)
+
+第四步：预览博客。
+    在地址栏输入：用户名.github.io你就可以访问页面了。 
+
+第五步：下载GIthub桌面版。
+    下载地址：https://desktop.github.com
+    下载下来后，用自己的用户名登录。然后选择File下的Clone repositories，然后将你刚刚建好的repositories的url复制过来，点击Clone。 克隆下来后把本地文件夹都删掉，如果有.git文件，需要保留。
+    ![](http://phm47bgvh.bkt.clouddn.com/4.jpg)
+    
+第六步：选择博客模版
+    推荐博客模版：https://github.com/renyuanz/leonids/
+    模板下载下来之后，将所有文件都复制到本地的库文件夹中。   
+    接下来打开GitHub桌面版。你会发现有非常多的changes，在summary中随意填一些内容，然后带点击commit to master。 
+    
+    
+第七步：访问博客
+    输入地址用户名.github.io。
+    访问自己的博客了，剩下的就该自己优化博客了。    
+    
+#### 绑定自己域名
+
+你会发现你的域名地址是：用户名.github.io，二级域名。
+
+网络上网址都是一级域名，接下来，我们也把博客网址弄成一级域名。
+
+第一步：到GoDaddy上注册域名
+    域名后缀根据跟人喜好,个人觉得：.com>.net>.org>.me>.name>.vip>.io>.top
+    
+第二步：空间绑定域名
+    登录github.com>进入项目>Settings>Custom domain>输入你的域名>Save。
+    
+第三步：库中新建一个“CNAME”文件
+    本地库中新建一个名为“CNAME”文件，文件内容只有你注册好的域名，不用加www。
+    
+第四步：解析域名
+    ping你的"用户名.github.io"域名，得到一个IP.
+    修改你的域名解析记录，添加A-@、A-www两个记录，用得到的IP；
+    
+第五步：等待解析成功
+    一般十分钟左右，如果设置正确就能用自己的域名访问博客了。
+    
+#### 博客内容    
+
+最后一部分就是博客内容了。
+     
+    
+  
+
