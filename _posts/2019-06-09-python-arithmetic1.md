@@ -71,3 +71,42 @@ comments: true
 >>> 
 ```
 
+#### 整数型和浮点型
+
+```
+>>> 8
+8
+>>> print(type(8))
+<class 'int'>
+>>> 8.0
+8.0
+>>> print(type(8.0))
+<class 'float'>
+```
+
+#### 浮点型不是严格意义的浮点
+稍微大一点点
+
+```
+>>> .1+.1+.1
+0.30000000000000004
+>>> print(.1+.1+.1==.3)
+False
+```
+
+#### 除法不能除以零
+
+```
+>>> 5/0
+Traceback (most recent call last):
+  File "<pyshell#6>", line 1, in <module>
+    5/0
+ZeroDivisionError: division by zero
+>>> 5/.0
+Traceback (most recent call last):
+  File "<pyshell#7>", line 1, in <module>
+    5/.0
+ZeroDivisionError: float division by zero
+>>> 
+```
+
