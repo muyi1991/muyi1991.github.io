@@ -2,7 +2,7 @@
 layout: post
 title: Python字符串
 categories: [Python]
-tags: [运算符、字符串]
+tags: [运算符,字符串]
 date: 2019-06-09 14:00:04
 comments: true
 ---
