@@ -39,8 +39,8 @@ paginate_path: "page/:num/"
 owner:
   name: 木易
   avatar: avatar.jpg
-  job: "岁月静好"
-  bio: ""
+  job: #""
+  bio: #""
 
   github: muyi1991 #username
   weibo:  #username
