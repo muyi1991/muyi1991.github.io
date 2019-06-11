@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 字典
+title: 字典的方法及嵌套
 categories: [Python]
 tags: [字典]
 date: 2019-06-11 22:00:07
@@ -68,7 +68,17 @@ True
 True
 >>> print(a is c)
 False
-
 ```
 
+#### 字典的嵌套
+
+```
+>>> people={'Tom':{'height':'180','weight':'80kg','color':'blue'},'Mary':'she is very hot.'}
+>>> Tom=people['Tom']
+>>> Tom_color=people['Tom']['color']
+>>> print(Tom)
+{'height': '180', 'weight': '80kg', 'color': 'blue'}
+>>> print(Tom_color)
+blue
+```
 
