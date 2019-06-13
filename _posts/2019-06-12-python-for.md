@@ -32,9 +32,9 @@ print(capitalized_names)
 #### for和range()配合使用
 利用range()给列表赋值
 
+```
 print(list(range(100)))
 
-```
 for a in range(100):
     print("My name is muyi.")
 ```
