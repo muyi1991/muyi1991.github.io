@@ -187,12 +187,7 @@ def goods_list(request):
     print(user.is_superuser)
     print(user.data_joined)
     return render(request, 'goods_list.html')
-    
-    杨建华
-   13051706922
-   True
-   True
-   2019-11-29 08:44:39.743826+00:00  
+  
 ```
 
 
