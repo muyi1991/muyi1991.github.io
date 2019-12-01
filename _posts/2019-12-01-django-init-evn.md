@@ -185,6 +185,8 @@ npm install gulp-imagemin@5.0.3  -g 安装到全局
 
 #### 最终目录结构
 
+
+```
 cms
     dist //存放可以放到线上压缩过的静态文件css,js,images等
         css
@@ -201,6 +203,7 @@ cms
         ...
     gulpfile.js //存放需要执行的gulp命令，开发时在终端进入cms文件下执行“gulp”命令即可
     package.json //存放初始化信息，包含所有安装的包的信息。
+```
     配置好了之后，以后开发时就可以在终端进入cms文件夹下执行gulp,gulp css,gulp js,gulp images等命令就可以实现保存样式，直接在浏览器看到效果了。
     
     
