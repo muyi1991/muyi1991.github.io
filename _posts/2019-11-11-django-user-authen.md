@@ -3,7 +3,7 @@ layout: post
 title: Django内置的User系统的验证、登录、退出登录
 categories: [Django]
 tags: [后端,user系统]
-date: 2019-11-30 13:48:07
+date: 2019-11-11 13:48:07
 comments: true
 ---
 
@@ -191,17 +191,17 @@ def goods_list(request):
 
 
 定义退出登录的视图函数
+
 ```Python
 def logout_view(request):
     logout(request)
     return redirect(reverse('cmsauth:login'))
 ```
-
 在templates模版中，访问一下视图函数即可退出登录
-```Html
+
+```html
 <li><a href="{% url 'cmsauth:logout' %}" class="dropdown-item">退出登录</a></li>
 ```
-
 
 
 

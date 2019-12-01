@@ -3,7 +3,7 @@ layout: post
 title: 在Django中定义全局restful的api
 categories: [Django]
 tags: []
-date: 2019-11-30 14:48:07
+date: 2019-11-13 14:48:07
 comments: true
 ---
 
