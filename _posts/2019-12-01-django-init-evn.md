@@ -3,7 +3,7 @@ layout: post
 title: Django前端环境搭建和安装相应包
 categories: [Django]
 tags: [前端]
-date: 2019-12-01 14:48:07
+date: 2019-12-01 13:48:07
 comments: true
 ---
 
