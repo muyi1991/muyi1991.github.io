@@ -8,7 +8,6 @@ comments: true
 ---
 
 
-```Python
 
 
 #### User系统验证、登录、退出实现步骤
@@ -211,7 +210,6 @@ def logout_view(request):
 
 ```html
 <li><a href="{% url 'cmsauth:logout' %}" class="dropdown-item">退出登录</a></li>
-```
 ```
 
 
