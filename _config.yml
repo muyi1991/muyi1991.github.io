@@ -71,3 +71,5 @@ owner:
   soundcloud: #username
   flickr: #username
   codepen: #username
+
+theme: jekyll-theme-cayman
