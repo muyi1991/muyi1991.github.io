@@ -14,14 +14,14 @@ comments: true
 
 
 
-```步骤：
+步骤：
 1. 在views.py的login_view视图中实现'GET‘请求
 2. 在templates模版中完成登录html界面
 3. 在forms.py中完成验证表单
 4. 在views.py的login_view视图中实现'POST‘请求，完成验证、登录功能。
 5. 利用Django自带的中间件使用user的信息。
 6. 在views.py的logout_view视图中实现退出登录功能。
-```
+
 
 
 #### login_view视图中返回登录页面
@@ -197,22 +197,21 @@ def goods_list(request):
 
 
 #### 退出登录
-
-
+```
 定义退出登录的视图函数
 
-```Python
 def logout_view(request):
     logout(request)
     return redirect(reverse('cmsauth:login'))
-```
+
 
 在templates模版中，访问一下视图函数即可退出登录
 
 
-```python
+
 <li><a href="{% url 'cmsauth:logout' %}" class="dropdown-item">退出登录</a></li>
 ```
+
 
 
 
