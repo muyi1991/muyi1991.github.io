@@ -3,7 +3,7 @@ layout: post
 title: Django内置的User系统的验证、登录、退出登录
 categories: [Django]
 tags: []
-date: 2019-11-30 11:48:07
+date: 2019-11-30 08:48:07
 comments: true
 ---
 
