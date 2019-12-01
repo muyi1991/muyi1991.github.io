@@ -2,7 +2,7 @@
 layout: post
 title: 定义全局表单错误提取方法
 categories: [Django]
-tags: [后端,form]
+tags: []
 date: 2019-11-30 11:48:07
 comments: true
 ---

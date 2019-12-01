@@ -2,7 +2,7 @@
 layout: post
 title: 在Django中定义全局restful的api
 categories: [Django]
-tags: [后端,restful]
+tags: []
 date: 2019-11-30 11:48:07
 comments: true
 ---
