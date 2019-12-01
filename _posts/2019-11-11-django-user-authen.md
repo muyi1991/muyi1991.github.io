@@ -196,7 +196,7 @@ def goods_list(request):
 ```
 
 
-#### 实现退出登录
+#### 退出登录
 
 
 定义退出登录的视图函数
@@ -206,11 +206,14 @@ def logout_view(request):
     logout(request)
     return redirect(reverse('cmsauth:login'))
 ```
+
 在templates模版中，访问一下视图函数即可退出登录
 
-```html
+
+```python
 <li><a href="{% url 'cmsauth:logout' %}" class="dropdown-item">退出登录</a></li>
 ```
+
 
 
 
