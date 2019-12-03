@@ -81,15 +81,15 @@ ajax请求不需要写表单提交，也就是说input不用写在form表单里�
 <!-- /.login-box -->
 
 <!-- jQuery -->
-<script src="{% static 'adminlte/plugins/jquery/jquery.min.js' %}"></script>
+//<script src="{% static 'adminlte/plugins/jquery/jquery.min.js' %}"></script>
 <!-- Bootstrap 4 -->
-<script src="{% static 'adminlte/plugins/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+//<script src="{% static 'adminlte/plugins/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
 <!-- AdminLTE App -->
-<script src="{% static 'adminlte/dist/js/adminlte.min.js' %}"></script>
-<script src="{% static 'js/login.min.js' %}"></script> //js文件
-<script src="{% static 'js/jquery-3.3.1.min.js' %}"></script> //jquery文件
-<script src="{% static 'js/xfzajax.min.js' %}"></script> //ajax文件
-<script src="{% static 'js/message.min.js' %}"></script> // toast弱提示文件
+//<script src="{% static 'adminlte/dist/js/adminlte.min.js' %}"></script>
+//<script src="{% static 'js/login.min.js' %}"></script> //js文件
+//<script src="{% static 'js/jquery-3.3.1.min.js' %}"></script> //jquery文件
+//<script src="{% static 'js/xfzajax.min.js' %}"></script> //ajax文件
+//<script src="{% static 'js/message.min.js' %}"></script> // toast弱提示文件
 
 </body>
 
