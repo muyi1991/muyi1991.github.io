@@ -26,27 +26,6 @@ ajax请求不需要写表单提交，也就是说input不用写在form表单里�
 
 
 ```
-{% load static %}
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-{#  <meta http-equiv="X-UA-Compatible" content="IE=edge">#}
-  <title>登录 | 酷客管理系统</title>
-  <!-- Tell the browser to be responsive to screen width -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="{% static 'css/login.min.css' %}">
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="{% static 'adminlte/plugins/fontawesome-free/css/all.min.css' %}">
-  <!-- Ionicons -->
-  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
-  <!-- icheck bootstrap -->
-  <link rel="stylesheet" href="{% static 'adminlte/plugins/icheck-bootstrap/icheck-bootstrap.min.css' %}">
-  <!-- Theme style -->
-  <link rel="stylesheet" href="{% static 'adminlte/dist/css/adminlte.min.css' %}">
-  <!-- Google Font: Source Sans Pro -->
-  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
-</head>
 <body class="hold-transition login-page">
 <div class="login-box">
   <div class="login-logo">
@@ -114,7 +93,6 @@ ajax请求不需要写表单提交，也就是说input不用写在form表单里�
 <script src="{% static 'js/message.min.js' %}"></script> // toast弱提示文件
 
 </body>
-</html>
 
 ```
 
