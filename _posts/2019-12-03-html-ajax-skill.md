@@ -80,6 +80,8 @@ ajax请求不需要写表单提交，也就是说input不用写在form表单里�
 </div>
 <!-- /.login-box -->
 
+
+```
 <!-- jQuery -->
 //<script src="{% static 'adminlte/plugins/jquery/jquery.min.js' %}"></script>
 <!-- Bootstrap 4 -->
@@ -91,6 +93,7 @@ ajax请求不需要写表单提交，也就是说input不用写在form表单里�
 //<script src="{% static 'js/xfzajax.min.js' %}"></script> //ajax文件
 //<script src="{% static 'js/message.min.js' %}"></script> // toast弱提示文件
 
+```
 </body>
 
 ```
