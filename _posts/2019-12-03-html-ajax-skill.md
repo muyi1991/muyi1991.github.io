@@ -38,7 +38,6 @@ ajax请求不需要写表单提交，也就是说input不用写在form表单里�
       <p class="login-box-msg">登录</p>
 
 {#      <form action="" class="signin-group"  >#}
-          {% csrf_token %}
         <div class="input-group mb-3">
           <input type="text" class="form-control" name="telephone" placeholder="手机号">
           <div class="input-group-append">
