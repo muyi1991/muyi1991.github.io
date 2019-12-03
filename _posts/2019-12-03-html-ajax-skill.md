@@ -15,7 +15,7 @@ ajax请求不需要写表单提交，也就是说input不用写在form表单里�
 具体原理是利用jquery在网页加载完成后，利用$找到input的值，然后利用ajax提交数据。以登录功能为例，以下是具体步骤：
 
 
-1. 在html中导入js文件，ajax文件，jquery这些script文件
+1. 在网页中导入“js”文件
 2. 在django视图函数中完成登录的post视图函数
 3. 利用ajax发送post请求
 4. 导入message.js文件，在js文件中引用
