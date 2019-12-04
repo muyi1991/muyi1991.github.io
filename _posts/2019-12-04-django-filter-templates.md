@@ -103,7 +103,7 @@ INSTALLED_APPS = [
 
 
 ```
-{% load time_filters %}
+load time_filters 
 
 <div class="form-group">
      <label for="">加入日期</label>
