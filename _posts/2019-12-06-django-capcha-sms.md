@@ -318,7 +318,7 @@ urlpatterns = [
       <p class="login-box-msg">找回密码</p>
 
 {#      <form action="" class="signin-group"  >#}
-          {% csrf_token %}
+          
 
         <div class="input-group mb-3">
                 <input type="text" class="form-control" name="telephone" placeholder="手机号">
