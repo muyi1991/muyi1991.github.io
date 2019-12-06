@@ -369,7 +369,7 @@ urlpatterns = [
         <div class="social-auth-links text-center mb-3">
             <p>- OR -</p>
             <p class="mb-1">
-                <a href="{% url 'index:login' %}">登录</a>
+                
             </p>
         </div>
 
