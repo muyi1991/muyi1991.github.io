@@ -46,7 +46,7 @@ MIDDLEWARE = [
 
 ```
 <form>
-{% csrf_token %}
+大括号 百分号 csrf_token 百分号 大括号
 ...
 </form>
 ```
