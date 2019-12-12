@@ -1,7 +1,7 @@
 ---
 layout: post
 title: django发送短信验证码详解
-categories: [django]
+categories: [后端]
 tags: [后端]
 date: 2019-12-06 15:48:07
 comments: true

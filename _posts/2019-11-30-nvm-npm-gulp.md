@@ -1,7 +1,7 @@
 ---
 layout: post
 title: nvm和node.js环境配置，npm的使用和gulp的安装
-categories: [Django]
+categories: [前端]
 tags: [前端]
 date: 2019-11-30 13:48:07
 comments: true

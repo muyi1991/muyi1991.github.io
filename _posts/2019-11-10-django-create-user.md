@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 自定义Django内置的User系统
-categories: [Django]
+categories: [后端]
 tags: []
 date: 2019-11-10 11:48:07
 comments: true

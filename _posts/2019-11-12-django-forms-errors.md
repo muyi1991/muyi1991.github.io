@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 定义全局表单错误提取方法
-categories: [Django]
+categories: [后端]
 tags: []
 date: 2019-11-12 11:42:07
 comments: true

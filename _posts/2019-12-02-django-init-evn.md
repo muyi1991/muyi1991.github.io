@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Django后端开发的准备工作
-categories: [Django]
+categories: [后端]
 tags: [后端]
 date: 2019-12-02 13:48:07
 comments: true

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 自定义模版过滤器格式化时间
-categories: [django]
+categories: [后端]
 tags: [后端]
 date: 2019-12-04 15:48:07
 comments: true

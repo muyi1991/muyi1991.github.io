@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 自定义login_required装饰器及给普通视图和类视图添加装饰器
-categories: [django]
+categories: [后端]
 tags: [后端]
 date: 2019-12-04 19:03:07
 comments: true

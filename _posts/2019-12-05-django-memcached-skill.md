@@ -1,7 +1,7 @@
 ---
 layout: post
 title: memcached的安装和使用
-categories: [django]
+categories: [后端]
 tags: [后端]
 date: 2019-12-05 15:48:07
 comments: true
