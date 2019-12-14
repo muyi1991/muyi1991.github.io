@@ -112,12 +112,12 @@ urlpatterns = [
 
 ```
 <head>
-    <link rel="stylesheet" href="{% 'plugins/fontawesome-free/css/all.min.css' %}">
-    <link rel="stylesheet" href="{% 'dist/css/adminlte.min.css' %}">
-    <script src="{% 'js/jquery-3.3.1.min.js' %}" ></script>//jquery必须导入
-    <script src="{% 'js/xfzajax.min.js' %}" ></script>//ajax必须导入
-    <script src="{% 'js/cos-js-sdk-v5.min.js' %}"></script>//sdk
-    <script src="{% 'js/index_main.js' %}" ></script>//我们自己的js代码
+    <link rel="stylesheet" href=" 'plugins/fontawesome-free/css/all.min.css' ">
+    <link rel="stylesheet" href="'dist/css/adminlte.min.css' ">
+    <script src=" 'js/jquery-3.3.1.min.js' " ></script>//jquery必须导入
+    <script src=" 'js/xfzajax.min.js' " ></script>//ajax必须导入
+    <script src=" 'js/cos-js-sdk-v5.min.js' "></script>//sdk
+    <script src=" 'js/index_main.js' " ></script>//我们自己的js代码
 </head>
 <body>
 <input type="file" id="file-selector" >
