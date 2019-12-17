@@ -50,10 +50,10 @@ urlpatterns = [
 
 引用静态文件config.js和min.js
 ```
-{% block head %}
+
     <script src=" 'ueditor/ueditor.config.js' " ></script>
     <script src=" 'ueditor/ueditor.all.min.js' " ></script>
-{% endblock %}
+
 ```
 
 在页面中定义script标签定义富文本编辑器给一个id，然后给id进行初始化就可以定义一个富文本编辑器了。
