@@ -10,6 +10,7 @@ comments: true
 
 #### 结构
 
+使用card来完成对列表的布局，card-header里面放导航，card-body里面分三个row来分别来实现搜索，主题内容，分页功能。
 
 ```html
     <div class="card ">
