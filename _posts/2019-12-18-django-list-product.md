@@ -125,7 +125,7 @@ comments: true
                                     <td>{{ product.category.name }}</td>
                                     <td>{{ product.pub_time|time_format }}</td>
                                     <td>
-                                        <a href="{%  'product:edit_product' %}?product_id={{ product.pk }}" class="btn btn-primary btn-xs edit-btn">编辑</a>
+                                        <a href=" 'product:edit_product' ?product_id={{ product.pk }}" class="btn btn-primary btn-xs edit-btn">编辑</a>
                                         <button class="btn btn-danger btn-xs delete-btn delete-btn" data-product-id="{{ product.pk }}">删除</button>
                                     </td>
                                     </tr>
