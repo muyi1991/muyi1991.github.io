@@ -101,7 +101,7 @@ comments: true
                             <button class="btn btn-primary">查询</button>
                         </label>
                         <label>
-                            <a href="{%  'product:product_list' %}">清除查询</a>
+                            <a href=" 'product:product_list' ">清除查询</a>
                         </label>
                     </form>
                 </div>
