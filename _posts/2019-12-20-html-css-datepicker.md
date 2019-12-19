@@ -23,7 +23,7 @@ comments: true
     <script src=" 'adminlte/bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js' "></script>
     <script src=" 'adminlte/bower_components/bootstrap-datepicker/dist/locales/bootstrap-datepicker.zh-CN.min.js' "></script>
     <link rel="stylesheet" href=" 'css/product_list.min.css' %}">
-    <script src="{% static 'js/product_list.min.js' "></script>
+    <script src=" 'js/product_list.min.js' "></script>
 ```
 
 #### 完成html
