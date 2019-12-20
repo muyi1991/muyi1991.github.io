@@ -24,7 +24,7 @@ comments: true
 pip install djangorestframework
 ```
 
-在settings.py中注册。
+在settings.py中进行注册。
 ```
 INSTALLED_APPS = [
     'django.contrib.admin',
