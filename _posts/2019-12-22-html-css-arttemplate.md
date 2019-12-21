@@ -64,10 +64,12 @@ document.getElementById('content').innerHTML = html;
 #### 加载更多新闻案例
 
 
+html文件中的代码如下：
+
 ```
 
 
-{% block head %}
+
     <script src="{% static 'arttemplate/template-web.js' %}"></script>//导入sdk文件
     <script id="news-item" type="text/html">//定义一个js文件ID
         {% verbatim %}//在django中告诉Django模版这部分代码不是django的模版代码
@@ -95,7 +97,7 @@ document.getElementById('content').innerHTML = html;
             {{ /each }}
         {% endverbatim %}
     </script>
-{% endblock %}
+
 ```
 
 js文件中的代码如下：
