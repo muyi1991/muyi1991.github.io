@@ -70,7 +70,7 @@ html文件中的代码如下：
 
 
 
-    <script src="{% static 'arttemplate/template-web.js' %}"></script>//导入sdk文件
+    <script src="'arttemplate/template-web.js' "></script>//导入sdk文件
     <script id="news-item" type="text/html">//定义一个js文件ID
         {% verbatim %}//在django中告诉Django模版这部分代码不是django的模版代码
             {{ each newses news index }}
