@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 自定义django的command命令
+title: pycharm常用快捷键
 categories: [随笔]
 tags: [pycharm常用快捷键]
 date: 2019-12-24 13:48:07
