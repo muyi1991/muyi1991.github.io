@@ -17,13 +17,19 @@ comments: true
 * shift + cmd + f 全局搜索
 * shift + cmd + R 全局替换
 
+#### 代码操作快捷键
+
+* cmd d 复制选中代码
+* ctr + shift + 上下方向键 上下移动代码
+* cmd backspace 删除当前行
+* cmd / 注释/取消注释一行
+
 #### 其他快捷键
 
 * cmd b 跳转到声明处（cmd加鼠标）
 * opt + 空格 显示符号代码 （esc退出窗口 回车进入代码）
 * cmd []光标之前/后的位置
 * opt + F7 find usage
-* cmd backspace 删除当前行
 * cmd +c 复制光标当前行,剪切同理
 * cmd + f 当前文件搜索（回车下一个 shift回车上一个）
 * cmd + r 当前文件替换
@@ -38,7 +44,6 @@ comments: true
 * cmd - 折叠当前
 * shift cmd + 展开所有
 * shift cmd - 折叠所有
-* cmd / 注释/取消注释一行
 * opt + cmd + / 批量注释(pycharm不生效)
 * ctr + tab 史上最NB的导航窗口（工程文件列表、文件结构列表、命令行模式、代码检查、VCS等，下面两个是可以被替换的）
 * alt + F12 打开命令行栏
