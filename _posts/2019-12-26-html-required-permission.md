@@ -19,16 +19,7 @@ comments: true
 
 在前端的使用。使用user.is_superuser来判断返回值，来判断是否是超级用户。
 
-```
-user.is_superuser 
-                <li class="nav-item dropdown">
-                    <a id="dropdownSubMenu1" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle">员工</a>
-                    <ul aria-labelledby="dropdownSubMenu1" class="dropdown-menu border-0 shadow">
-                      <li><a href="{% url 'staff:staff_list' %}" class="dropdown-item">员工列表</a></li>
-                    </ul>
-                </li>
 
-```
 
 后端定义装饰器超级管理员装饰器
 
@@ -178,20 +169,7 @@ class DeleteStaffView(View):
 使用perms.product.change_product来判断登录用户是否有相应的权限。
 
 
-```
- perms.product.change_product
-                <li class="nav-item dropdown">
-                <a id="dropdownSubMenu1" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle">商品</a>
-                <ul aria-labelledby="dropdownSubMenu1" class="dropdown-menu border-0 shadow">
-                  <li><a href="{% url 'product:product_list' %}" class="dropdown-item">商品列表</a></li>
-                  <li><a href="{% url 'product:add_product' %}" class="dropdown-item">新增商品</a></li>
-                  <li><a href="{% url 'product:product_category' %}" class="dropdown-item">商品分类</a></li>
-                  <li><a href="#" class="dropdown-item">商品回收站</a></li>
-                  <li><a href="#" class="dropdown-item">商品评价</a></li>
-                </ul>
-                </li>
 
-```
 
 在后端视图函数中判断权限。
 先导入permission_required，然后添加装饰器“@method_decorator(permission_required(perm="product.change_product",login_url='/'),name='dispatch')”，其中product是指某个模型，login_url是指如果不满足权限跳转哪个界面，/表示跳转首页。就是模型+模型权限就可以实现控制了。
