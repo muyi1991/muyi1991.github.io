@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 权限在前端和后端视图中的使用
-categories: [前端,后端]
+categories: [后端]
 tags: [权限]
 date: 2019-12-26 13:48:07
 comments: true
@@ -173,6 +173,8 @@ class DeleteStaffView(View):
 
 在后端视图函数中判断权限。
 先导入permission_required，然后添加装饰器“@method_decorator(permission_required(perm="product.change_product",login_url='/'),name='dispatch')”，其中product是指某个模型，login_url是指如果不满足权限跳转哪个界面，/表示跳转首页。就是模型+模型权限就可以实现控制了。
+
+注：/表示跳转到主页，如果主页也有需要登录的装饰器装饰，那么就会跳转到登录页，所有只需要权限装饰就可以了。没有权限跳转主页，主页有登录装饰，所以会跳登录页，就没有必要在权限装饰器的地方再写一个需要登录的装饰器了。
 
 
 ```django
@@ -401,9 +403,9 @@ class QnToken(View):
         # print(token)
         return restful.result(data={'token':token})
 
-
-
 ```
+
+
 
 
 
