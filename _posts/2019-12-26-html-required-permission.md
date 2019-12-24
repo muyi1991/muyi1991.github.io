@@ -19,7 +19,7 @@ comments: true
 
 在前端的使用。使用user.is_superuser来判断返回值，来判断是否是超级用户。
 
-```html
+```
 user.is_superuser 
                 <li class="nav-item dropdown">
                     <a id="dropdownSubMenu1" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle">员工</a>
@@ -178,7 +178,7 @@ class DeleteStaffView(View):
 使用perms.product.change_product来判断登录用户是否有相应的权限。
 
 
-```html
+```
  perms.product.change_product
                 <li class="nav-item dropdown">
                 <a id="dropdownSubMenu1" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle">商品</a>
