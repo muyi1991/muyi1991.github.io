@@ -25,24 +25,10 @@ comments: true
                 <label for="">分组</label>
                 <div class="icheck-primary">
                   {% for group in groups %}
-                      {% if staff %}
-                          {% if group in user_groups %}
-                              <input checked type="checkbox" id="{{ group.pk }}" name="groups" value="{{ group.pk }}">
-                              <label for="{{ group.pk }}">
-                                    {{ group.name }}
-                              </label>
-                          {% elif group not in user_groups %}
-                              <input  type="checkbox" id="{{ group.pk }}" name="groups" value="{{ group.pk }}">
-                              <label for="{{ group.pk }}">
-                                    {{ group.name }}
-                              </label>
-                          {% endif %}
-                      {% else %}
                           <input type="checkbox" id="{{ group.pk }}" name="groups" value="{{ group.pk }}">
                           <label for="{{ group.pk }}">
                                 {{ group.name }}
                           </label>
-                      {% endif %}
                   {% endfor %}
                 </div>
             </div>
