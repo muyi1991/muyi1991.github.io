@@ -20,14 +20,14 @@ comments: true
 在前端的使用。使用user.is_superuser来判断返回值，来判断是否是超级用户。
 
 ```html
-{#            {% if user.is_superuser %}#}
+//{#            {% if user.is_superuser %}#}
                 <li class="nav-item dropdown">
                     <a id="dropdownSubMenu1" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle">员工</a>
                     <ul aria-labelledby="dropdownSubMenu1" class="dropdown-menu border-0 shadow">
                       <li><a href="{% url 'staff:staff_list' %}" class="dropdown-item">员工列表</a></li>
                     </ul>
                 </li>
-{#            {% endif %}#}
+//{#            {% endif %}#}
 ```
 
 后端定义装饰器超级管理员装饰器
@@ -179,7 +179,7 @@ class DeleteStaffView(View):
 
 
 ```html
-{% if perms.product.change_product %}
+//{% if perms.product.change_product %}
                 <li class="nav-item dropdown">
                 <a id="dropdownSubMenu1" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle">商品</a>
                 <ul aria-labelledby="dropdownSubMenu1" class="dropdown-menu border-0 shadow">
@@ -190,7 +190,7 @@ class DeleteStaffView(View):
                   <li><a href="#" class="dropdown-item">商品评价</a></li>
                 </ul>
                 </li>
-{% endif %}
+//{% endif %}
 ```
 
 在后端视图函数中判断权限。
