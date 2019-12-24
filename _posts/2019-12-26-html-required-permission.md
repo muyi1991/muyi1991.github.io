@@ -17,9 +17,9 @@ comments: true
 
 #### 超级管理员
 
-在前端的使用。
+在前端的使用。使用user.is_superuser来判断返回值，来判断是否是超级用户。
 
-```
+```html
 {#            {% if user.is_superuser %}#}
                 <li class="nav-item dropdown">
                     <a id="dropdownSubMenu1" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle">员工</a>
@@ -30,7 +30,7 @@ comments: true
 {#            {% endif %}#}
 ```
 
-后端定义装饰器
+后端定义装饰器超级管理员装饰器
 
 
 ```
@@ -175,8 +175,10 @@ class DeleteStaffView(View):
 
 在前端使用。使用perms.product.change_product来判断是否拥有某个模型的权限，其中perms是中间件自带的，会返回给html页面perms，可以用来判断用户是否拥有权限，product是指模型的名称，change_product是指更改模型的权限，可以在auth_permission这张表里看到所有的权限，一般一个模型包含三种权限，add,change,delete。
 
+使用perms.product.change_product来判断登录用户是否有相应的权限。
 
-```
+
+```html
 {% if perms.product.change_product %}
                 <li class="nav-item dropdown">
                 <a id="dropdownSubMenu1" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle">商品</a>
