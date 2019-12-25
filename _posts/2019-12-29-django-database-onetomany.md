@@ -61,7 +61,7 @@ class User(AbstractBaseUser, PermissionsMixin):
     username = models.CharField(max_length=100)
     is_active = models.BooleanField(default=True)
     data_joined = models.DateTimeField(auto_now_add=True)
-    area = models.ForeignKey('Area',on_delete=models.PROTECT,null=False)
+    area = models.ForeignKey('Area',on_delete=models.PROTECT,null=False)//如果设置了"related_name='users'"。那么就可以不用area.user_set.all()，可以用area.users.all()来查询某个分类下的所有用户了
 
     """设置手机号为验证方式"""
     USERNAME_FIELD = 'telephone'
@@ -83,6 +83,11 @@ class Area(models.Model):
 
     class Meta:
         db_table = 'area'
+        //ording = '-pub_time' 可以指定模型的排序方式，如发布时间排序
+        
+    def __str__(self):
+        reture "<Area:(id:%s,name:%s)>" % (self.id,self.name) 
+    //这样可以让视图函数中的print函数可以输出area，可以输出区域的id和名称
 
 ```
 
@@ -107,6 +112,7 @@ class StaffListView(View):
         area = request.user.area
         # staffs = User.objects.filter(area=area)//也可以通过查询user对象里面所有地区登录该地区的员工，结果是一样的
         staffs = area.user_set.all()//推荐用法"地区+用户_set"查询某个地区所有员工
+        //如果设置了"related_name='users'"。那么就可以用staffs = area.users.all()来访问某区域下的所有用户，效果是一样的
         context = {
             'staffs':staffs
         }
