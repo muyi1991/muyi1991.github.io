@@ -2,7 +2,7 @@
 layout: post
 title: django中orm的外健和外健删除详解
 categories: [后端]
-tags: []
+tags: [数据库]
 date: 2019-12-30 13:48:07
 comments: true
 ---
