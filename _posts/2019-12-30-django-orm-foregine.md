@@ -1,8 +1,8 @@
 ---
 layout: post
 title: django中orm的外健和外健删除详解
-categories: [前端]
-tags: [html,小程序]
+categories: [后端]
+tags: []
 date: 2019-12-30 13:48:07
 comments: true
 ---
