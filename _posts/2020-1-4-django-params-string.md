@@ -68,6 +68,9 @@ urlpatterns  = {
 
 def book_detail(request):
     book_id = request.GET.get('book_id')
+    //可以指定默认参数，如果没有传递就使用默认参数，常用的是分页，如果没有传递，默认第一页。
+    //page = request.GET.get('p',1)，如果没有传递，就是默认参数1.
+    //page = int(request.GET.get('p',1)),因为request传递过来都是字符串，所以要转成int类型
     text = "您获取的图书ID是%s" % book_id
     return HttpRestponse(text)
 ```
