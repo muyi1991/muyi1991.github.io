@@ -22,7 +22,7 @@ comments: true
 from Django.http import path
 
 urlpatterns  = {
-    path('book_detail/<book_id>/',book_detail)
+    path('book_detail/<int:book_id>/',book_detail)
 }
 //path中的<book_id>必须和def中的request,book_id必须一致，如果不一致会导致找不到
 
@@ -50,6 +50,8 @@ def book_detail(request,book_id,category_id):
 ```
 
 注意：如果你在path中传递两个参数，那么你在视图函数中必须来接受两个参数，而且参数的名字还必须要对应正确，不一致也会报错。
+
+如果想要传递的参数是指定的类型可以使用<int:book_id>，这样限制传递的book_id只能是int类型。
 
 
 #### 查询字符串传参
