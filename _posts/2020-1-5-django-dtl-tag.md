@@ -238,16 +238,34 @@ safe
 
 如果`value`是一个不包含任何特殊字符的字符串，比如`<a>`这种，那么以上代码就会把字符串正常的输入。如果`value`是一串`html`代码，那么以上代码将会把这个`html`代码渲染到浏览器中。
 
-slice
+striptags
 
-类似于`Python`中的切片操作。示例代码如下：
+删除字符串中所有的`html`标签。示例代码如下：
 
 ```python
-{{ some_list|slice:"2:" }}
+{{ value|striptags }}
 ```
 
-以上代码将会给`some_list`从`2`开始做切片操作。
 
+truncatechars
+
+如果给定的字符串长度超过了过滤器指定的长度。那么就会进行切割，并且会拼接三个点来作为省略号。示例代码如下：
+
+```python
+{{ value|truncatechars:5 }}
+```
+
+如果`value`是等于`北京欢迎您~`，那么输出的结果是`北京...`。可能你会想，为什么不会`北京欢迎您...`呢。因为三个点也占了三个字符，所以`北京`+三个点的字符长度就是5。
+
+truncatechars\_html
+
+类似于`truncatechars`，只不过是不会切割`html`标签。示例代码如下：
+
+```python
+{{ value|truncatechars:5 }}
+```
+
+如果`value`是等于`<p>北京欢迎您~</p>`，那么输出将是`<p>北京...</p>`。
 
 
 
