@@ -256,10 +256,26 @@ striptags
 {{ value|striptags }}
 ```
 
-如果`value`是`<strong>hello world</strong>`，那么以上代码将会输出`hello world`。
 
+truncatechars
 
+如果给定的字符串长度超过了过滤器指定的长度。那么就会进行切割，并且会拼接三个点来作为省略号。示例代码如下：
 
+```python
+{{ value|truncatechars:5 }}
+```
+
+如果`value`是等于`北京欢迎您~`，那么输出的结果是`北京...`。可能你会想，为什么不会`北京欢迎您...`呢。因为三个点也占了三个字符，所以`北京`+三个点的字符长度就是5。
+
+truncatechars\_html
+
+类似于`truncatechars`，只不过是不会切割`html`标签。示例代码如下：
+
+```python
+{{ value|truncatechars:5 }}
+```
+
+如果`value`是等于`<p>北京欢迎您~</p>`，那么输出将是`<p>北京...</p>`。
 
 
 
