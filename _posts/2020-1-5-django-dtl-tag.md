@@ -228,6 +228,38 @@ random
 
 如果`value`是等于`['a','b','c']`，那么以上代码会在列表中随机选择一个。
 
+safe
+
+标记一个字符串是安全的。也即会关掉这个字符串的自动转义。示例代码如下：
+
+```python
+{{value|safe}}
+```
+
+如果`value`是一个不包含任何特殊字符的字符串，比如`<a>`这种，那么以上代码就会把字符串正常的输入。如果`value`是一串`html`代码，那么以上代码将会把这个`html`代码渲染到浏览器中。
+
+slice
+
+类似于`Python`中的切片操作。示例代码如下：
+
+```python
+{{ some_list|slice:"2:" }}
+```
+
+以上代码将会给`some_list`从`2`开始做切片操作。
+
+striptags
+
+删除字符串中所有的`html`标签。示例代码如下：
+
+```python
+{{ value|striptags }}
+```
+
+如果`value`是`<strong>hello world</strong>`，那么以上代码将会输出`hello world`。
+
+
+
 
 
 
