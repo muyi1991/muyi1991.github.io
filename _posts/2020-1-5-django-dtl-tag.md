@@ -106,12 +106,12 @@ return value
 一个日期按照指定的格式，格式化成字符串。示例代码如下：
 
 ```python
-# 数据
+数据
 context = {
 "birthday": datetime.now()
 }
 
-# 模版
+模版
 {{ birthday|date:"Y/m/d" }}
 ```
 
