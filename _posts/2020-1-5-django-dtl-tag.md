@@ -82,6 +82,65 @@ except Exception:
 return ''
 ```
 
+cut过滤器：
+移除值中所有指定的字符串。类似于`python`中的`replace(args,"")`。示例代码如下：
+
+```python
+{{ value|cut:" " }}
+```
+
+以上示例将会移除`value`中所有的空格字符。`cut`过滤器的源代码如下：
+
+```python
+def cut(value, arg):
+"""Remove all values of arg from the given string."""
+safe = isinstance(value, SafeData)
+value = value.replace(arg, '')
+if safe and arg != ';':
+return mark_safe(value)
+return value
+```
+
+ date过滤器：
+将
+一个日期按照指定的格式，格式化成字符串。示例代码如下：
+
+```python
+context = {
+"birthday": datetime.now()
+}
+
+{{ birthday|date:"Y/m/d" }}
+```
+
+那么将会输出`2018/02/01`。其中`Y`代表的是四位数字的年份，`m`代表的是两位数字的月份，`d`代表的是两位数字的日。  
+还有更多时间格式化的方式。见下表。
+
+| 格式字符 | 描述 | 示例 |
+| --- | --- | --- |
+| Y | 四位数字的年份 | 2018 |
+| m | 两位数字的月份 | 01-12 |
+| n | 月份，1-9前面没有0前缀 | 1-12 |
+| d | 两位数字的天 | 01-31 |
+| j | 天，但是1-9前面没有0前缀 | 1-31 |
+| g | 小时，12小时格式的，1-9前面没有0前缀 | 1-12 |
+| h | 小时，12小时格式的，1-9前面有0前缀 | 01-12 |
+| G | 小时，24小时格式的，1-9前面没有0前缀 | 1-23 |
+| H | 小时，24小时格式的，1-9前面有0前缀 | 01-23 |
+| i | 分钟，1-9前面有0前缀 | 00-59 |
+| s | 秒，1-9前面有0前缀 | 00-59 |
+
+
+default过滤器
+
+如果值被评估为`False`。比如`[]`，`""`，`None`，`{}`等这些在`if`判断中为`False`的值，都会使用`default`过滤器提供的默认值。示例代码如下：
+
+```python
+{{ value|default:"nothing" }}
+```
+
+如果`value`是等于一个空的字符串。比如`""`，那么以上代码将会输出`nothing`。
+
 
 
 
