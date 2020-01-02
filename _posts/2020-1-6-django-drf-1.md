@@ -3,7 +3,7 @@ layout: post
 title: Django中drf基础之序列化定义
 categories: [后端]
 tags: [drf]
-date: 2019-11-27 13:48:07
+date: 2020-1-6 13:48:07
 comments: true
 ---
 
