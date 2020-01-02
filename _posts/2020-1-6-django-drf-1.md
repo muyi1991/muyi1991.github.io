@@ -177,6 +177,8 @@ class MerchantSerializer(serializers.ModelSerializer):
         fields = '__all__'
 ```
 
+可以使用"exclude = ['name','logo']"来指定不需要的字段。
+
 使用模型序列化就完成了基础序列化中的所有serializer中的代码。
 
 
