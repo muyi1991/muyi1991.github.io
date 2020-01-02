@@ -128,9 +128,9 @@ PROTECT，保护，员工引用了区域，那么区域就不能删除。
 area = models.ForeignKey('Area',on_delete=models.PROTECT,null=False)
 ```
 
-set_null，设置为空，员工引用了区域，区域删除那么员工的区域为空。注：使用set_null，则必须该字段的null=True，必须可以为空。
+SET_NULL，设置为空，员工引用了区域，区域删除那么员工的区域为空。注：使用set_null，则必须该字段的null=True，必须可以为空。
 ```
-area = models.ForeignKey('Area',on_delete=models.set_null,null=True)
+area = models.ForeignKey('Area',on_delete=models.SET_NULL,null=True)
 ```
 
 set_default，设置默认，员工引用了区域，区域删除那么员工的区域为设置的默认值。注：使用set_default，则必须该字段要设置默认值。
