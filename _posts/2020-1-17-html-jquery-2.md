@@ -1,6 +1,6 @@
 ---
 layout: post
-title: jquery基础之静态方法each,map
+title: jquery基础之each,map等静态方法
 categories: [前端]
 tags: [jquery]
 date: 2020-1-17 13:48:07
