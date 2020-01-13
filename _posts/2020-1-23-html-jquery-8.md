@@ -73,6 +73,44 @@ b'\xe4\xb8\xad\xe6\x96\x87'
 '中文'
 ```
 
+#### 使用ajax发送数组数据到后台
+
+使用ajax发送数组给到后台需要设置traditional：true，设置这个属性，不让后台接受不到数据。
+
+
+```html
+xfzajax.post({
+            'url':url,
+            'traditional':true, //必须设置这个属性，不然后台接受不到数据
+            'data':{
+                'title':title,
+                'category1':category1,
+                'category2':category2,
+                'cost_price':costPrice,
+                'price':price,
+                'detail':detail,
+                'pk':pk,
+                'thumbnails':thumbnails,
+                'colors':colors,
+                'skus':skus
+
+            },
+            'success':function (result) {
+                if (result['code'] === 200){
+                    if(pk){
+                        window.location.replace('/product/product_list/')
+                    }else {
+                            window.messageBox.showSuccess('发布成功')
+                        setTimeout(function () {
+                            window.location.replace('/product/product_list/')
+                        },1500)
+                    }
+                    console.log(result);
+                }
+            }
+        })
+```
+
 
 
 
