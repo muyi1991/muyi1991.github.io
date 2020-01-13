@@ -1,6 +1,6 @@
 ---
 layout: post
-title: jquery基础之事件详解
+title: Jquery基础之事件详解
 categories: [前端]
 tags: [jquery]
 date: 2020-1-19 13:48:07

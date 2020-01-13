@@ -1,6 +1,6 @@
 ---
 layout: post
-title: jquery基础之基本使用
+title: Jquery基础之基本使用
 categories: [前端]
 tags: [jquery]
 date: 2020-1-16 13:48:07

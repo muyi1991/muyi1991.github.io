@@ -1,6 +1,6 @@
 ---
 layout: post
-title: jquery基础之ajax
+title: Jquery基础之ajax
 categories: [前端]
 tags: [jquery]
 date: 2020-1-22 13:48:07

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: jquery基础之动效
+title: Jquery基础之动效
 categories: [前端]
 tags: [jquery]
 date: 2020-1-20 13:48:07

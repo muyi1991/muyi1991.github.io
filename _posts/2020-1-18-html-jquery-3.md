@@ -1,6 +1,6 @@
 ---
 layout: post
-title: jquery基础之属性操作
+title: Jquery基础之属性操作
 categories: [前端]
 tags: [jquery]
 date: 2020-1-18 13:48:07
