@@ -1,6 +1,6 @@
 ---
 layout: post
-title:JSON.parse() Json.stringify() json.loads() json.dumps()
+title:json在js和python中的应用及python的编码和解码
 categories: [前端]
 tags: [jquery]
 date: 2020-1-23 13:48:07
